@@ -1,32 +1,43 @@
-# Prerequisites
-*.d
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
 
-# Precompiled Headers
-*.gch
-*.pch
+int main()
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+{
 
-# Fortran module files
-*.mod
-*.smod
+char str[80];
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+int i = 0, cnt = 0;  
 
-# Executables
-*.exe
-*.out
-*.app
+
+
+
+std::cin >> str; 
+
+
+while (str[i] != '\0') 
+
+{
+
+ if (str[i] == 'c')
+
+ {
+
+  str[i] = 'v';  
+
+  cnt++; 
+
+ }
+
+ i++;
+
+}
+
+
+std::cout << str << std::endl; 
+
+std::cout << cnt;
+
+return 0;
+
+}
