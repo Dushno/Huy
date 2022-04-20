@@ -1,0 +1,70 @@
+#include <iostream>
+
+
+int main()
+
+{
+
+char str[80]; 
+
+int i = 0, cnt = 0; 
+
+
+
+std::cin >> str; 
+
+
+while (str[i] != '\0') 
+
+{
+
+ if (str[i] == 'c')
+
+ {
+
+  str[i] = 'v';  
+
+  cnt++; 
+ }
+
+
+ if (str[i] == 'C')
+
+ {
+
+  str[i] = 'V';  
+  
+  cnt++; 
+  
+ }
+ if (str[i] == 'v')
+
+ {
+
+  str[i] = 'c';  
+
+  cnt++; 
+ }
+
+
+ if (str[i] == 'V')
+
+ {
+
+  str[i] = 'C';  
+
+  cnt++; 
+  
+ }
+ i++; 
+
+}
+
+
+std::cout << str << std::endl; 
+
+std::cout << cnt; 
+
+return 0;
+
+}
